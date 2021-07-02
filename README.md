@@ -8,6 +8,10 @@ For more information have a look at the [ansible documentation](https://docs.ans
 ## Usage
 
 ```yaml
+- name: Install godaddypy package
+  pip:
+    name: godaddypy
+
 - name: Setup dns record for dns.example.net
   godaddy_record:
     api_key: "your_api_key"
